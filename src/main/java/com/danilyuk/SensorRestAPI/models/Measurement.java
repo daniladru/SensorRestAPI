@@ -1,11 +1,8 @@
 package com.danilyuk.SensorRestAPI.models;
 
-import org.hibernate.validator.constraints.NotEmpty;
 import org.hibernate.validator.constraints.Range;
 
 import javax.persistence.*;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 

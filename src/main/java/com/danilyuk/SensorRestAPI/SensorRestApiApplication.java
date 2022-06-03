@@ -15,5 +15,5 @@ public class SensorRestApiApplication {
 	@Bean
 	public ModelMapper modelMapper(){
 		return new ModelMapper();
-	};
+	}
 }

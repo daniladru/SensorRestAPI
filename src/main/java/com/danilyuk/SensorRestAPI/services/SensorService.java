@@ -22,11 +22,16 @@ public class SensorService {
         Optional<Sensor> sensor = sensorRepository.findByName(name);
         return sensor.orElse(null);
     }
+    public Sensor findById(Integer id){
+        Optional<Sensor> sensor = sensorRepository.findById(id);
+        return sensor.orElse(null);
+    }
 
     @Transactional
-    public void saveSensor(Sensor sensor){
+    public Sensor saveSensor(Sensor sensor){
         enrichSensor(sensor);
         sensorRepository.save(sensor);
+        return sensor;
     }
 
     public void enrichSensor(Sensor sensor){

@@ -7,6 +7,7 @@ public class SensorDTO {
     @NotEmpty(message = "Sensor name must by fill")
     @Size(min = 3,max = 30,message = "Name size from 3 to 30")
     private String name;
+    private Integer id;
 
     public SensorDTO() {
     }
@@ -21,5 +22,13 @@ public class SensorDTO {
 
     public SensorDTO(String name) {
         this.name = name;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }
