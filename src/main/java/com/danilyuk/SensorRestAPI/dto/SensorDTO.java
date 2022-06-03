@@ -8,6 +8,9 @@ public class SensorDTO {
     @Size(min = 3,max = 30,message = "Name size from 3 to 30")
     private String name;
 
+    public SensorDTO() {
+    }
+
     public String getName() {
         return name;
     }
